@@ -1,0 +1,21 @@
+#  서버 포트 설정
+server:
+  port : 8082
+
+# doatabase 연동 설정
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost: 3306/db_coding recipe?serverTimezone=Asia/Seoul&charact
+    username: user_codingrecipe
+    password: 1234
+    thymeleaf:
+      cache : false
+
+  # spring data jpa 설정
+  jpa:
+    database-platform: org.hibernat.dialect.MySQL5InnoDBDialect
+    open-in-view : true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
